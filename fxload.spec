@@ -52,7 +52,7 @@ rozwijania firmware, I2C szeregowej EEPROM.
 %build
 %{__make} all \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} -DFXLOAD_VERSION=\\\"%version\\\""
+	CFLAGS="%{rpmcflags} -DFXLOAD_VERSION=\\\"%{version}\\\""
 
 %install
 rm -rf $RPM_BUILD_ROOT
