@@ -7,6 +7,7 @@ Group:		Applications/System
 License:	GPL
 URL:		http://linux-hotplug.sourceforge.net/
 Source0:	http://unc.dl.sourceforge.net/sourceforge/linux-hotplug/%{name}-%{version}.tar.gz
+# Source0-md5:	cafd71a5bff0c57bcd248273b2541c05
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
