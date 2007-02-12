@@ -1,5 +1,5 @@
 Summary:	EZ-USB utility program
-Summary(pl):	Narzêdzie dla chipów EZ-USB
+Summary(pl.UTF-8):   NarzÄ™dzie dla chipÃ³w EZ-USB
 Name:		fxload
 Version:	2002_04_11
 Release:	1
@@ -27,23 +27,23 @@ where special device firmware is used to support writing into off-chip
 memory such as RAM (when firmware neeeds more than about 8 KBytes of
 code and data) or, for firmware development, I2C serial EEPROM.
 
-%description -l pl
-Ten pakiet zawiera narzêdzia do wgrywania oprogramowania do urz±dzeñ
-EZ-USB. Urz±dzenia EZ-USB u¿ywaj± mikrokontrolerów bazuj±cych na 8051
+%description -l pl.UTF-8
+Ten pakiet zawiera narzÄ™dzia do wgrywania oprogramowania do urzÄ…dzeÅ„
+EZ-USB. UrzÄ…dzenia EZ-USB uÅ¼ywajÄ… mikrokontrolerÃ³w bazujÄ…cych na 8051
 rozszerzonych o dodatkowe rejestry, bufory i inne rozszerzenia dla
 transakcji USB.
 
-Obecnie wspiera urz±dzenia bazuj±ce na Anchorchips EZ-USB jak równie¿
-Cypress EZ-USB FX (który jest niemal kompletnie ¼ród³owo
-kompatybilny), a tak¿e EZ-USB FX2 (który nie jest kompatybilny).
-Wszystkie te chipy obs³uguj± transfery z pe³n± prêdko¶ci± (12Mbit/s).
-Chip FX2 dodatkowo wspiera transfery wysokiej prêdko¶ci (480Mbit/s)
+Obecnie wspiera urzÄ…dzenia bazujÄ…ce na Anchorchips EZ-USB jak rÃ³wnieÅ¼
+Cypress EZ-USB FX (ktÃ³ry jest niemal kompletnie ÅºrÃ³dÅ‚owo
+kompatybilny), a takÅ¼e EZ-USB FX2 (ktÃ³ry nie jest kompatybilny).
+Wszystkie te chipy obsÅ‚ugujÄ… transfery z peÅ‚nÄ… prÄ™dkoÅ›ciÄ… (12Mbit/s).
+Chip FX2 dodatkowo wspiera transfery wysokiej prÄ™dkoÅ›ci (480Mbit/s)
 wprowadzone w USB 2.0.
 
-Ta wersja FXLOAD opcjonalnie wspiera dwu-etapowe ³adowanie, gdzie
-specjalne firmware u¿ywane jest do obs³ugi zapisywania do pamiêci
-znajduj±cej siê poza chipem takiej jak RAM (w momencie gdy firmware
-potrzebuje wiêcej ni¿ 8Kbajtów kodu i danych) lub w przypadku
+Ta wersja FXLOAD opcjonalnie wspiera dwu-etapowe Å‚adowanie, gdzie
+specjalne firmware uÅ¼ywane jest do obsÅ‚ugi zapisywania do pamiÄ™ci
+znajdujÄ…cej siÄ™ poza chipem takiej jak RAM (w momencie gdy firmware
+potrzebuje wiÄ™cej niÅ¼ 8KbajtÃ³w kodu i danych) lub w przypadku
 rozwijania firmware, I2C szeregowej EEPROM.
 
 %prep
