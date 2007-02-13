@@ -1,5 +1,5 @@
 Summary:	EZ-USB utility program
-Summary(pl.UTF-8):   Narzędzie dla chipów EZ-USB
+Summary(pl.UTF-8):	Narzędzie dla chipów EZ-USB
 Name:		fxload
 Version:	2002_04_11
 Release:	1
