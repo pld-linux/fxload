@@ -1,13 +1,13 @@
 Summary:	EZ-USB utility program
-Summary(pl.UTF-8):	Narzędzie dla chipów EZ-USB
+Summary(pl.UTF-8):	Narzędzie dla układów EZ-USB
 Name:		fxload
 Version:	2002_04_11
 Release:	1
 Group:		Applications/System
 License:	GPL
-URL:		http://linux-hotplug.sourceforge.net/
-Source0:	http://dl.sourceforge.net/sourceforge/linux-hotplug/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/linux-hotplug/%{name}-%{version}.tar.gz
 # Source0-md5:	cafd71a5bff0c57bcd248273b2541c05
+URL:		http://linux-hotplug.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,23 +28,23 @@ memory such as RAM (when firmware neeeds more than about 8 KBytes of
 code and data) or, for firmware development, I2C serial EEPROM.
 
 %description -l pl.UTF-8
-Ten pakiet zawiera narzędzia do wgrywania oprogramowania do urządzeń
+Ten pakiet zawiera narzędzia do wczytywania oprogramowania do urządzeń
 EZ-USB. Urządzenia EZ-USB używają mikrokontrolerów bazujących na 8051
 rozszerzonych o dodatkowe rejestry, bufory i inne rozszerzenia dla
 transakcji USB.
 
-Obecnie wspiera urządzenia bazujące na Anchorchips EZ-USB jak również
-Cypress EZ-USB FX (który jest niemal kompletnie źródłowo
+Obecnie obsługuje urządzenia bazujące na Anchorchips EZ-USB jak
+również Cypress EZ-USB FX (który jest niemal całkowicie źródłowo
 kompatybilny), a także EZ-USB FX2 (który nie jest kompatybilny).
-Wszystkie te chipy obsługują transfery z pełną prędkością (12Mbit/s).
-Chip FX2 dodatkowo wspiera transfery wysokiej prędkości (480Mbit/s)
+Wszystkie te układy obsługują transfery z pełną prędkością (12Mbit/s).
+Układ FX2 dodatkowo obsługuje transfery wysokiej prędkości (480Mbit/s)
 wprowadzone w USB 2.0.
 
-Ta wersja FXLOAD opcjonalnie wspiera dwu-etapowe ładowanie, gdzie
+Ta wersja FXLOAD opcjonalnie obsługuje ładowanie dwuetapowe, w którym
 specjalne firmware używane jest do obsługi zapisywania do pamięci
-znajdującej się poza chipem takiej jak RAM (w momencie gdy firmware
-potrzebuje więcej niż 8Kbajtów kodu i danych) lub w przypadku
-rozwijania firmware, I2C szeregowej EEPROM.
+znajdującej się poza układem takiej jak RAM (w momencie gdy firmware
+potrzebuje więcej niż 8 kilobajtów kodu i danych) lub, w przypadku
+rozwijania firmware, EEPROM dostępnej przez I2C.
 
 %prep
 %setup -q
