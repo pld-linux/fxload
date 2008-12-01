@@ -3,10 +3,11 @@ Summary(pl.UTF-8):	Narzędzie dla układów EZ-USB
 Name:		fxload
 Version:	2008_10_13
 Release:	1
-Group:		Applications/System
 License:	GPL
+Group:		Applications/System
 Source0:	http://dl.sourceforge.net/linux-hotplug/%{name}-%{version}.tar.gz
 # Source0-md5:	4477a2457f064228bef4a93ba2f21692
+Patch0:		%{name}-link.patch
 URL:		http://linux-hotplug.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -48,11 +49,13 @@ rozwijania firmware, EEPROM dostępnej przez I2C.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} all \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} -DFXLOAD_VERSION=\\\"%{version}\\\""
+	CFLAGS="%{rpmcflags} -Wall -DFXLOAD_VERSION=\\\"%{version}\\\"" \
+	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
