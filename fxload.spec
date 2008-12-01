@@ -67,4 +67,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.txt
 %attr(755,root,root) /sbin/*
 %{_mandir}/man?/*
+%dir %{_datadir}/usb
 %{_datadir}/usb/*.hex
