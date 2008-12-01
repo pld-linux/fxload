@@ -1,0 +1,11 @@
+--- fxload-2008_10_13/Makefile~orig	2008-10-13 23:44:04.000000000 +0200
++++ fxload-2008_10_13/Makefile	2008-12-01 02:21:19.000000000 +0100
+@@ -39,7 +39,7 @@
+ 
+ # object files
+ $(PROG): $(FILES_OBJ)
+-	$(CC) -o $(PROG) $(FILES_OBJ)
++	$(CC) $(CFLAGS) $(LDFLAGS) -o $(PROG) $(FILES_OBJ)
+ 
+ %.o: %.c
+ 	$(CC) -c $(CFLAGS)  $< -o $@
