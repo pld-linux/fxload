@@ -1,0 +1,22 @@
+--- fxload-2008_10_13/Makefile.orig	2016-07-15 19:17:49.741849518 +0200
++++ fxload-2008_10_13/Makefile	2016-07-15 19:23:04.921845701 +0200
+@@ -61,7 +61,7 @@
+ install: $(PROG)
+ 	$(INSTALL_PROGRAM) $(PROG) $(sbindir)/$(PROG)
+ 	$(INSTALL_PROGRAM) -m 0644 $(PROG).8 $(mandir)/man8/$(PROG).8
+-	$(INSTALL_PROGRAM) -m 0644 a3load.hex $(prefix)/usr/share/usb/a3load.hex
++	$(INSTALL_PROGRAM) -m 0644 a3load.hex $(prefix)/lib/firmware/ezusb/a3load.hex
+ 
+ 
+ # make a source tarball
+--- fxload-2008_10_13/fxload.8.orig	2008-10-13 23:44:04.000000000 +0200
++++ fxload-2008_10_13/fxload.8	2016-07-15 19:23:25.118512358 +0200
+@@ -226,7 +226,7 @@
+ This is provided by the Linux kernel as part of USB hotplugging.
+ .SH "FILES"
+ .TP
+-.I /usr/share/usb/a3load.hex
++.I /lib/firmware/ezusb/a3load.hex
+ Second stage loader that works with AnchorChips EZ-USB,
+ Cypress EZ-USB FX, and Cypress EZ-USB FX2.
+ Note that this only supports the 0xA3 vendor command, to
