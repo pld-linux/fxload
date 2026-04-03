@@ -2,7 +2,7 @@ Summary:	EZ-USB utility program
 Summary(pl.UTF-8):	Narzędzie dla układów EZ-USB
 Name:		fxload
 Version:	2008_10_13
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Applications/System
 Source0:	http://downloads.sourceforge.net/linux-hotplug/%{name}-%{version}.tar.gz
